@@ -9,7 +9,7 @@ import numpy as np
 st.title("Document Scanner Application")
 uploaded_image=st.file_uploader('Please upload an Image',type=['jpg','jpeg','png'])
 
-pytesseract.pytesseract.tesseract_cmd=r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+# pytesseract.pytesseract.tesseract_cmd=r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 def Extract_Text(img):
     text=pytesseract.image_to_string(img)
